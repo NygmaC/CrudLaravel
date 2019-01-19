@@ -7,7 +7,7 @@
 	</head>
 	<body>
 		<div class="container">
-			@component('component')
+			@component('component', ["current" => "current"])
 			@endcomponent
 			<main role="main">
 				@hasSection('body')

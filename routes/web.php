@@ -6,3 +6,6 @@ Route::get('/', function () {
 
 Route::get('/produtos', 'ControllerProduto@index');
 Route::get('/categorias', 'ControllerCategoria@index');
+Route::get('/categorias/setcadastro', 'ControllerCategoria@setModalCadastro');
+Route::post('/categorias/setinsert', 'ControllerCategoria@setInsert');
+Route::get('/categorias/excluir/{id}', 'ControllerCategoria@setDelete');
