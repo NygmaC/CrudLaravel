@@ -1,10 +1,50 @@
 @extends('layout.app', ["current" => "produtos"])
 
 @section('body')
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<div class="card border">
+	<div class="card-body">
+		<h5 class="card-title"> Produtos</h5>
+		<table class="table table-ordered table-hover">
+			<thead >
+				<tr>
+					<th>Codigo</th>
+					<th>Nome Produto</th>
+					<th>Quantidade</th>
+					<th>Preço</th>
+					<th>Categoria</th>
+					<th>Ações</th>
+				</tr>
+			</thead>
+
+			<tbody>
+	
+			</tbody>
+
+		</table>
+	</div>
+</div>
+<div class="card-footer">
+	<button  class="btn btn-sm btn-primary"> Novo Produto </a>
+</div>
+
+<div class="model" tabindex="-1" role="dialog" id="FrmProdutos">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+
+			<form class="form-horizontal" id="formcadastroprodutos">
+
+				<div class="modal-header">
+						<div class="modal-title">Novo Produto</div>
+				</div>
+				
+				<div class="modal-body">
+
+					
+				</div>
+
+			</form>
+
+		</div>
+	</div>
+</div>
 @endsection
